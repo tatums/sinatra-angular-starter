@@ -1,0 +1,11 @@
+.container-fluid
+  table.table.table-striped
+    thead
+      tr
+        th Id
+        th Name
+    tbody
+      tr ng-repeat="budget in budgets"
+        td() {{budget.id}}
+        td() {{budget.name}}
+
