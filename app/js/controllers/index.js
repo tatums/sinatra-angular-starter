@@ -1,6 +1,6 @@
 'use strict';
 
-adminBudgetsControllers.controller('IndexController', [ '$scope', 'budgets',function($scope, budgets){
-    $scope.budgets = budgets
+myAppControllers.controller('IndexController', [ '$scope', 'users', function($scope, users){
+    $scope.users = users
     $scope.title = "blah"
 }]);

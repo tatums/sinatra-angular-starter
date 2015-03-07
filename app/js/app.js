@@ -1,16 +1,16 @@
 'use strict';
-var adminBudgetsApp = angular.module('adminBudgetsApp', [ 'ngRoute', 'adminBudgetsControllers', 'adminBudgetsServices' ]);
-var adminBudgetsControllers = angular.module('adminBudgetsControllers', []);
-var adminBudgetsServices = angular.module('adminBudgetsServices', ['ngResource']);
+var myApp             = angular.module('myApp', [ 'ngRoute', 'myAppControllers', 'myAppServices' ]);
+var myAppControllers  = angular.module('myAppControllers', []);
+var myAppServices     = angular.module('myAppServices', ['ngResource']);
 
-adminBudgetsApp.config( function($routeProvider, $locationProvider) {
+myApp.config( function($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
             templateUrl: 'partials/index.html',
             controller: 'IndexController',
             resolve: {
-                budgets: function(Budget){
-                    return Budget.all
+                users: function(User){
+                    return User.all
                 }
             }
         })

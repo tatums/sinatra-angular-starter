@@ -3,9 +3,11 @@
     thead
       tr
         th Id
-        th Name
+        th First Name
+        th Last Name
     tbody
-      tr ng-repeat="budget in budgets"
-        td() {{budget.id}}
-        td() {{budget.name}}
+      tr ng-repeat="user in users"
+        td() {{user.id}}
+        td() {{user.firstName}}
+        td() {{user.lastName}}
 

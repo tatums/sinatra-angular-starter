@@ -21,7 +21,7 @@ class App < Sinatra::Base
       '/js/vendor/angular-resource.min.js',
       '/js/app.js',
       '/js/controllers/index.js',
-      '/js/services/budget.js'
+      '/js/services/user.js'
     ]
   end
   set :slim, :format => :html
